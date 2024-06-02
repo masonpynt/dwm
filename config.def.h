@@ -13,21 +13,25 @@ static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char col_graybgwond[]  = "#282828";
-static const char col_wonderdesel[] = "#928374";
-static const char col_wondersel[]   = "#d9a656";
-static const char col_wondersel2[]  = "#D8A756";
-static const char col_dmenuwondnormfg[]  = "#d9a656";
-static const char col_dmenuwondnormbg[]  = "#282828";
-static const char col_dmenuwondselfg[]   = "#282828";
-static const char col_dmenuwondselsbg[]  = "#d9a05b"; //I guess there's a typo and it should be #d9a05b
-static const char col_dmenuwondoutfg[]   = "#000000";
-static const char col_dmenuwondoutbg[]   = "#00ffff";
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_wonderdesel, col_graybgwond, col_graybgwond },
-	[SchemeSel]  = { col_wondersel2, col_graybgwond,  col_graybgwond  },
-};
+static const char col_darkbgwond[] = "#12131e"; 
+//static const char col_darkbgwond[]  = "#28293f";  
+static const char col_wonderdesel[] = "#ffffff"; 
+static const char col_wondersel[]   = "#B200ED";  
+static const char col_wondersel2[]  = "#B200ED";  
+static const char col_dmenuwondnormfg[]  = "#ffffff"; 
+//static const char col_dmenuwondnormbg[]  = "#12131e";
+//static const char col_dmenuwondnormbg[]  = "#28293f";
+static const char col_dmenuwondnormbg[]  = "#12131e";
+static const char col_dmenuwondselfg[]   = "#ffffff"; 
+static const char col_dmenuwondselsbg[]  = "#B200ED"; 
+static const char col_dmenuwondoutfg[]   = "#000000"; 
+static const char col_dmenuwondoutbg[]   = "#00ffff"; 
 
+static const char *colors[][3] = {
+    /*               fg         bg         border   */
+    [SchemeNorm] = { col_wonderdesel, col_darkbgwond, col_darkbgwond },
+    [SchemeSel]  = { col_wondersel2, col_darkbgwond, col_darkbgwond },
+};
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
